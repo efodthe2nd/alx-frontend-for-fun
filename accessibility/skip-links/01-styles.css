@@ -188,12 +188,13 @@
     clip: rect(1px, 1px, 1px, 1px);
     white-space: nowrap;
   }
-
-  nav ul .off-screen {
+  
+  .off-screen {
     left: -100vw;
     position: absolute;
   }
-  nav ul li .skip-link {
+  
+  .skip-link {
     background: var(--color-black);
     color: var(--color-white);
     left: 0;
@@ -205,7 +206,8 @@
     transform: translateY(-1rem);
     transition: transform .2s ease-in-out, opacity .2s ease-in-out;
   }
-  li .skip-link .focus {
+  
+  .skip-link:focus {
     opacity: 1;
     transform: translateY(0);
   }
@@ -646,7 +648,6 @@
   /* Card WORK
       ============================= */
   
-  
   .card-work .card-outer {
     position: relative;
     overflow: hidden;
@@ -686,10 +687,17 @@
   }
   
   .card-work .card-title a {
-    opacity: 0;
     display: block;
     text-decoration: none;
     padding-top: 45%;
+    opacity: 0;
+  }
+  
+  .card-work .card-title a:focus,
+  .card-work:hover .card-title a {
+    opacity: 1;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
   }
   
   .card-work .card-title a::after {
@@ -700,13 +708,6 @@
     bottom: 0;
     content: '';
   }
-
-  .card-work .card-title a:focus, .card-work:hover .card-title a {
-    opacity: 1;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
-
   
   @media only screen and (max-width: 767px) {
   
@@ -1122,3 +1123,4 @@
     cursor: text;
     margin: 0 1rem;
   }
+  
