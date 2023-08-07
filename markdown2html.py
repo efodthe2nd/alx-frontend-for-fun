@@ -9,7 +9,7 @@ if __name__ == '__main__':
     # Test that the number of arguments passed is 2
     if len(sys.argv[1:]) != 2:
         print('Usage: ./mardown2html.py README.md README.html',
-                file=sys.stderr)
+              file=sys.stderr)
         sys.exit(1)
 
     # Store the arguments into variables
