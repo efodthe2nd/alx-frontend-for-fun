@@ -1,0 +1,16 @@
+/* sass file that assigns tags of class */
+%in {
+	font-size: 12px;
+}
+.info {
+	@extend %in;
+}
+.success {
+	@extend %in;
+	color: #00ff00;
+}
+.warning {
+	@extend %in;
+	color: #FF0000;
+}
+
