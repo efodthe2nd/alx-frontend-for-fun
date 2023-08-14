@@ -1,0 +1,12 @@
+/* Sass file that assigns margins left and right */
+@mixin margin-assign($marg) {
+	margin-left: $marg;
+	margin-right: $marg;
+}
+
+body {
+	@include margin-assign(10px);
+}
+div {
+	@include margin-assign(15px);
+}
