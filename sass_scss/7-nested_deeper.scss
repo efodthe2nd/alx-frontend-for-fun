@@ -1,0 +1,13 @@
+/* sass file that assigns font-sizes to diff elements */
+body {
+	font-size: 14px;
+
+	h1 {
+		font-size: 16px;
+
+		.smaller {
+			font-size: 12px;
+		}
+	}
+
+}
